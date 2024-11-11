@@ -7,8 +7,8 @@ This is then traced in grafana tempo. The traces are submitted in zipkin format.
 ![Untitled Diagram.drawio.svg](assets/diagram.drawio.svg)
 
 ### Used dependencies
-- **SpringBoot**: Java framework
-- **Micrometer Tracing with OpenTelemetry Bridge**: Metrics library
+- **SpringBoot with Spring Boot Web**: Provides the web server
+- **Micrometer Tracing with Brave Bridge**: Provides the tracer, which manages the tracing context
 - **Grafana**: Visualization tool 
 - **Grafana Tempo**: Tracing backend
 
