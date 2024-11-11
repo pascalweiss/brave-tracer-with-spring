@@ -28,11 +28,12 @@ dependencies {
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-aop', version: '3.3.5'
 
 
-	// provides the otel tracer, which manages the lifecycle of a span.
+	// provides the brave tracer, which manages the lifecycle of a span.
 	// micrometer-tracing is added transitively. It provides a simple facade to most popular tracer libs
 	// and prevents vendor lock-in
 	implementation 'io.micrometer:micrometer-tracing-bridge-brave'
 
+	// the exporter sends traces to a zipkin server, e.g. Grafana Tempo (port 9411 by default)
 	implementation 'io.zipkin.reporter2:zipkin-reporter-brave'
 
 
