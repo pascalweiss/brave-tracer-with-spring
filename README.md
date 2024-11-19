@@ -1,6 +1,6 @@
 # Service-with-tracing
 
-This is a SpringBoot service that demonstrates how to send traces in zipkin to a grafana backend.
+This is a Spring Boot service that demonstrates how to send traces in zipkin to a grafana backend.
 It comprises two services, `ping` and `pong`, where `ping` sends a request to `pong`. 
 This is then traced in grafana tempo. The traces are submitted in zipkin format.
 
